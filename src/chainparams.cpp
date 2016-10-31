@@ -44,8 +44,8 @@ public:
         consensus.powLimit = uint256S("0007ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowAveragingWindow = 17;
         assert(maxUint/UintToArith256(consensus.powLimit) >= consensus.nPowAveragingWindow);
-        consensus.nPowMaxAdjustDown = 32; // 32% adjustment down
-        consensus.nPowMaxAdjustUp = 16; // 16% adjustment up
+        consensus.nPowMaxAdjustDown = 47; // 47% adjustment down
+        consensus.nPowMaxAdjustUp = 28; // 28% adjustment up
         consensus.nPowTargetSpacing = 5.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         /**
